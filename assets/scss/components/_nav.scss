@@ -1,0 +1,70 @@
+.tabbed_buttons {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  border-radius: 8px;
+  background-color: #ebf0fd;
+  button {
+    border-radius: 8px;
+    color: $primary;
+    padding: 4px 8px;
+    margin-right: 0.5rem;
+    &.active {
+      background-color: $primary;
+      color: #fff !important;
+      transition: all 0.35s;
+      -moz-transition: all 0.35s;
+      -webkit-transition: all 0.35s;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.p-tabview {
+  .p-tabview-nav-content {
+    .p-tabview-nav {
+      .p-tabview-header {
+        font-size: 14px;
+        .p-tabview-nav-link {
+          .p-tabview-title {
+            font-weight: 400;
+            color: $subtext;
+            font-size: 14px;
+            padding: 4px auto;
+            font-family: Figtree;
+            transition: all 0.35s;
+            -moz-transition: all 0.35s;
+            -webkit-transition: all 0.35s;
+          }
+        }
+        &.p-highlight {
+          .p-tabview-nav-link {
+            .p-tabview-title {
+              border-bottom: 2px solid $primary;
+              padding-bottom: 4px;
+              color: $primary;
+              font-weight: 600;
+            }
+            .p-ink {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.p-tabview-panels {
+  // background-color: $dashboard-bg;
+  // padding: 12px;
+
+  .p-tabview-panel {
+    border: 0;
+    .p-tabview-content {
+      border: 0;
+    }
+  }
+}

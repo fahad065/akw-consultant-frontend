@@ -1,0 +1,27 @@
+.p-accordion {
+  .p-accordion-header {
+    .p-accordion-header-link {
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 500;
+
+      .p-accordion-toggle-icon {
+        transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -webkit-transition: all 0.8s ease-in-out;
+      }
+    }
+  }
+
+  .p-accordion-content {
+    padding: 4px 0;
+    font-size: 12px;
+    font-weight: 300;
+
+    .brand-option {
+      &:hover {
+        border-radius: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.login_wrapper {
+  border-radius: 0 !important;
+  background: url('../images/Login/nathan-bg.svg') !important;
+  overflow: hidden auto;
+  position: relative;
+}
+
+.circle {
+  animation: spin 1s linear infinite;
+}
+
+.loginButton {
+  transition: all 250ms ease-in-out;
+  margin: 0 auto;
+}
+
+.loginButton {
+  max-width: 50px !important;
+  min-width: 50px !important;
+  border-radius: 50% !important;
+}
+
+.grad {
+  background-color: #0c97fa;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(-45deg, #16e1f5, #1976d2);
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-background-clip: text;
+}
+
+.boxShadowCard {
+  box-shadow: 0px 24px 30px #959ea51a !important;
+}
+
+.borderRadiusCards {
+  border-radius: 18px !important;
+}
+
+.fa-regular {
+  font-size: 1.1rem !important;
+}
+
+@media screen and (max-width: 1540px) {
+  .eventCard {
+    min-height: 420px !important;
+  }
+
+  .eventCardImg {
+    max-height: 240px !important;
+  }
+
+  .newsCardText,
+  .newsCardTitle {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.curve-parent {
+  position: relative;
+}
+
+.grey-heading-text {
+  color: #8798ad !important;
+}
+
+.textFontSize {
+  font-size: 14px !important;
+}
+
+.borderRadiusInfo {
+  border-radius: 12px !important;
+}
+
+.buttonBackgroundShade {
+  background: transparent linear-gradient(86deg, #4263eb 0%, #59a5fb 100%) 0% 0%
+    no-repeat padding-box;
+
+  .v-progress-circular {
+    color: #fff;
+  }
+}
+
+.textTransformUnset {
+  text-transform: unset !important;
+}
+
+// KETY FREAMES
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    max-width: 150px !important;
+    min-width: 150px !important;
+    border-radius: 90% !important;
+  }
+
+  25% {
+    max-width: 110px !important;
+    min-width: 110px !important;
+    border-radius: 80% !important;
+  }
+
+  50% {
+    max-width: 80px !important;
+    min-width: 80px !important;
+    border-radius: 70% !important;
+  }
+
+  100% {
+    max-width: 50px !important;
+    min-width: 50px !important;
+    border-radius: 50% !important;
+  }
+}

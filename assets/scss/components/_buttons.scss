@@ -1,0 +1,46 @@
+.p-button:focus {
+  box-shadow: unset;
+}
+
+.text_btn_global.p-button {
+  border-radius: 4px !important;
+
+  ::before {
+    border-radius: 4px !important;
+  }
+
+  .p-button-label {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    font-family: Figtree;
+  }
+}
+
+.filled_btn_global.p-button {
+  border-radius: 4px !important;
+
+  ::before {
+    border-radius: 4px !important;
+  }
+
+  .p-button-label {
+    font-size: 12px !important;
+    letter-spacing: 0.5px !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    font-family: Figtree;
+  }
+
+  &.large_btn {
+    border-radius: 8px !important;
+
+    ::before {
+      border-radius: 8px !important;
+    }
+
+    .p-button-label {
+      font-size: 14px !important;
+    }
+  }
+}

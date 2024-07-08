@@ -1,0 +1,431 @@
+label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.p-inputtext,
+.p-inputtextarea,
+.inputtext {
+  font-size: 12px;
+  padding: $input-padding;
+  outline: none;
+  border-radius: $input-border-radius;
+  border: 1px solid #cdd6e3;
+
+  box-shadow: none !important;
+  width: 100%;
+
+  &:focus {
+    outline: $input-outline;
+  }
+
+  &::placeholder {
+    color: #aaa;
+  }
+
+  &:readonly,
+  &:disabled {
+    background-color: #f4f4f4;
+    color: #aaa;
+  }
+
+  &.error {
+    outline: 1px solid #ff0000;
+  }
+}
+
+.p-dropdown-label.p-inputtext {
+  border: none !important;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.p-checkbox {
+  /* width: 0.75rem;
+  height: 0.75rem; */
+
+  .p-checkbox-box,
+  .p-checkbox-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: none;
+    outline: 1.5px solid #000000de;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      border: none;
+      outline: $input-outline;
+    }
+  }
+}
+
+.input-error {
+  margin-top: 0.25rem;
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.p-multiselect-panel {
+  .p-multiselect-header {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    position: relative;
+
+    /* &::after {
+      content: 'Select All';
+      position: absolute;
+      font-size: x-small;
+      top: 0;
+      bottom: 0;
+      left: 3rem;
+      display: flex;
+      align-items: center;
+    } */
+  }
+
+  .p-checkbox,
+  .p-checkbox-box {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+.p-dropdown {
+  box-shadow: none !important;
+  border-radius: $input-border-radius;
+  width: 100%;
+  outline: none;
+
+  border: 1px solid #cdd6e3;
+
+  &:focus,
+  &:hover {
+    // outline: $input-outline;
+    // border: none !important;
+    cursor: pointer;
+  }
+
+  .p-inputtext,
+  .p-inputtext:read-only {
+    cursor: text;
+    outline: none !important;
+    color: inherit !important;
+    background-color: inherit !important;
+  }
+}
+
+.p-dropdown-panel {
+  .p-dropdown-items-wrapper {
+    .p-dropdown-items {
+      padding: 6px;
+
+      .p-dropdown-item {
+        padding: 0 16px;
+        margin: 4px 0;
+        font-size: 12px;
+        border-radius: $input-border-radius;
+
+        &.p-highlight {
+          background-color: #4263eb;
+          color: #fff;
+
+          &.p-focus {
+            background-color: #4263eb;
+            color: #fff;
+          }
+        }
+
+        &.p-focus {
+          background-color: #4263eb1a;
+        }
+      }
+    }
+  }
+}
+
+.file-input-container {
+  width: 100% !important;
+  display: flex;
+
+  .file-input {
+    position: relative;
+    outline: $input-outline;
+    border-radius: $input-border-radius;
+    border: none;
+    box-shadow: none;
+    width: 100% !important;
+    cursor: pointer;
+    height: 2.2rem;
+
+    &::before {
+      // content: 'Choose File';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: $input-padding;
+      border-radius: $input-border-radius;
+      // background-color: #fff;
+      color: #000;
+      font-weight: 400;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .file-name {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: $input-padding;
+      border-radius: $input-border-radius;
+      background-color: #fff;
+      color: #000;
+      font-size: 12px;
+      // truncate text
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+
+      &.file-placeholder {
+        color: #aaa;
+      }
+    }
+
+    // add clipper icon to the file input
+    .clipper {
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      right: 8px;
+      // color: #000;
+      cursor: pointer;
+    }
+
+    .cancel {
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      right: 2rem;
+      // color: #000;
+      cursor: pointer;
+    }
+
+    input {
+      display: none !important;
+    }
+  }
+}
+
+.p-calendar {
+  box-shadow: none !important;
+  border-radius: $input-border-radius;
+  width: 100%;
+  outline: none;
+  border: 1px solid #cdd6e3;
+
+  .p-inputtext {
+    border: none;
+    box-shadow: none;
+    outline: $input-outline;
+    border-radius: $input-border-radius;
+    cursor: pointer;
+  }
+
+  .p-inputtext,
+  .p-inputtext:read-only {
+    cursor: text;
+    outline: none !important;
+    color: inherit !important;
+    background-color: inherit !important;
+  }
+}
+
+// Calender Style
+.custom_calendar.p-datepicker {
+  position: absolute;
+  top: 185px !important;
+  left: 1175px !important;
+  z-index: 1001;
+  transform-origin: center top;
+}
+
+.custom_calendar_icon {
+  margin-right: 2px;
+  margin-left: -18px !important;
+}
+
+.p-datepicker {
+  margin-top: calc(var(--p-anchor-gutter));
+
+  .p-datepicker-month,
+  .p-datepicker-year {
+    font-size: 11px !important;
+    padding: 2px;
+    font-weight: 500 !important;
+    font-family: Figtree;
+  }
+
+  .p-datepicker-header {
+    color: #4b5563;
+    border-bottom: none;
+    padding: 0 0 0 0;
+    font-weight: 600 !important;
+    font-family: Figtree;
+  }
+
+  thead > tr > th,
+  td {
+    padding: 3px !important;
+    margin: 2px !important;
+  }
+
+  td > span,
+  th > span {
+    width: 25px !important;
+    height: 20px !important;
+    font-size: 11px !important;
+    font-family: Figtree;
+    padding: 0 !important;
+    border-radius: 3px;
+    margin: 0 !important;
+  }
+}
+
+.p-inputgroup,
+inputgroup {
+  border: none;
+  box-shadow: none;
+  outline: $input-outline;
+  border-radius: $input-border-radius;
+  width: 100%;
+
+  .p-inputtext,
+  .p-inputtextarea,
+  .inputtext,
+  .p-dropdown {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    color: #00000060;
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+
+    // even child
+    &:nth-child(2n) {
+      // border-left: $input-outline;
+      // background-color: #f4f4f4;
+    }
+  }
+
+  inputgroupaddon {
+    padding: {
+      left: 12px;
+      right: 12px;
+    }
+  }
+}
+
+.vue-tel-input {
+  border-radius: $input-border-radius !important;
+  border: none !important;
+  outline: $input-outline;
+  box-shadow: none !important;
+  font-size: 12px;
+
+  &.p-invalid {
+    border: 1px solid #ff0000 !important;
+  }
+
+  .vti__input,
+  .vti__dropdown {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+.action__btn {
+  display: flex;
+  background: #f5f6f7;
+  border: 1px solid #e2e7f1 !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  transition: all 0.4s ease-in-out !important;
+
+  .p-button.search_icon_btn {
+    &.search_active {
+      margin-right: 0px;
+    }
+
+    padding: 8px;
+    font-size: 12px;
+    transition: all 0.4s ease-in-out !important;
+    display: flex;
+    background: inherit !important;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: none !important;
+    outline: none !important;
+
+    .p-button-icon {
+      width: 20px;
+    }
+  }
+
+  .search_bar {
+    width: 0px !important;
+    opacity: 0 !important;
+    padding: 0 !important;
+    // display: none;
+    background: inherit !important;
+    border: none !important;
+    outline: none !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    transition: all 0.4s ease-in-out !important;
+
+    &.active_search {
+      opacity: 1 !important;
+      padding: 8px 12px;
+      width: 85px !important;
+    }
+  }
+}
+
+.p-multiselect-items-wrapper {
+  .p-multiselect-items {
+    padding: 6px;
+    .p-checkbox-box {
+      margin-top: 4px;
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+    .p-multiselect-item {
+      padding: 0 16px;
+      margin: 4px 0;
+      font-size: 12px;
+      border-radius: $input-border-radius;
+    }
+  }
+}
+
+.p-confirm-popup-footer {
+  @apply flex flex-row items-center justify-end space-x-2.5;
+}

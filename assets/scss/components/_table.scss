@@ -1,0 +1,484 @@
+.main__table {
+  max-width: 100%;
+  border-radius: 8px !important;
+  border: 1px solid #e9ecef;
+  // height: calc(100vh - 298px) !important;
+  // height: 58vh;
+  overflow: hidden;
+
+  // TOP PART
+  .top__con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative !important;
+    padding: 12px 14px;
+
+    .top_heading_table {
+      display: flex;
+      gap: 4px;
+      color: #000027;
+
+      /* Body/Large/Medium */
+      font-family: Figtree;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      /* 24px */
+    }
+
+    .action__btn {
+      display: flex;
+
+      .p-button.filter_table_btn {
+        display: flex;
+        height: 36px;
+        padding: 8px 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        background: transparent !important;
+        border: 1px solid #4263eb !important;
+        border-radius: 8px !important;
+        // .p-button-component {
+        color: #4263eb;
+        font-family: Figtree;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        /* 14px */
+        gap: 8px;
+
+        .p-button-icon {
+          width: 20px;
+          height: 20px;
+        }
+
+        .btn_text {
+          font-family: Figtree;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%;
+          /* 14px */
+          text-transform: capitalize;
+        }
+
+        // }
+        &::before {
+          background-color: #4263eb;
+        }
+
+        .v-ripple__container {
+          background-color: #4263eb;
+          opacity: 0.1;
+        }
+      }
+
+      .p-button.search_icon_btn {
+        &.search_active {
+          padding-left: 8px !important;
+          width: 46px;
+          border-radius: 8px 0 0 8px !important;
+          margin-right: 0px;
+        }
+
+        border: 1px solid #e2e7f1 !important;
+
+        transition: all 0.4s ease-in-out !important;
+
+        display: flex;
+        width: 36px;
+        height: 36px;
+        // margin-right: 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px !important;
+        background: #f5f6f7;
+        color: black;
+
+        .p-button-icon {
+          width: 20px;
+          // height: 20px;
+        }
+      }
+    }
+  }
+
+  // DATA INSIDE THE DATA TABLE PART
+  .status__con {
+    // max-width: 50px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    .status {
+      min-width: fit-content;
+      max-width: 99px;
+      white-space: nowrap;
+      border-radius: 20px;
+      padding: 4px 12px;
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: Figtree;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+
+      &.active {
+        background-color: #37b24d1a;
+        color: #37b24d;
+      }
+
+      &.inactive {
+        background-color: #fdebeb;
+        color: #f03e3e;
+      }
+    }
+  }
+
+  td {
+    .action_con {
+      display: flex;
+      justify-content: space-between;
+      width: 60px;
+
+      :hover {
+        // background-color: $outline;
+      }
+
+      .table_action {
+        padding: 4px;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.table_header {
+  padding: 6px 20px;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .table_header_heading {
+    color: var(--Color-Primary-Default, #4263eb);
+    text-align: center;
+    /* Headings/H5/Semibold */
+    font-family: Figtree;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    /* 27px */
+  }
+
+  .table_header_sub_heading {
+    color: var(--foundation-colors-base-overlays-black-opacity-50,
+        rgba(22, 23, 24, 0.5));
+    text-align: center;
+
+    /* Body/Medium/Medium */
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+  }
+
+  .table_header_button {
+    .p-button {
+      display: flex;
+      height: 36px !important;
+      padding: 8px 12px !important;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background: #4263eb !important;
+      border-radius: 8px !important;
+
+      .p-button-label {
+        color: #fff;
+        font-family: Figtree;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        /* 14px */
+        gap: 8px;
+
+        .btn_icon {
+          width: 20px;
+          height: 20px;
+        }
+
+        .btn_text {
+          font-family: Figtree;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%;
+          /* 14px */
+          text-transform: capitalize;
+        }
+      }
+
+      &.icon_button {
+        background-color: transparent !important;
+        border: 1px solid transparent !important;
+        padding: 5px;
+        margin: 0;
+        color: #161718;
+        font-size: 20px;
+        transition: 0.3s;
+      }
+    }
+
+    .delete_btn {
+      &::before {
+        border-radius: 4px !important;
+      }
+
+      height: inherit !important;
+      border-radius: 4px !important;
+      background: transparent !important;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: #2c3e50;
+
+      .p-button-label {
+        color: #2c3e50;
+        font-size: 14px;
+      }
+    }
+
+    .text_btn_global.p-button {
+      border-radius: 4px !important;
+      background-color: transparent !important;
+
+      ::before {
+        border-radius: 4px !important;
+      }
+
+      .p-button-label {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        text-transform: capitalize !important;
+        font-family: Figtree;
+        letter-spacing: 0.5px !important;
+        color: #4263eb !important;
+      }
+
+      &.large_btn {
+        border-radius: 8px !important;
+
+        ::before {
+          border-radius: 8px !important;
+        }
+
+        .p-button-label {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .filled_btn_global.p-button {
+      border-radius: 4px !important;
+
+      ::before {
+        border-radius: 4px !important;
+      }
+
+      .p-button-label {
+        font-size: 12px !important;
+        letter-spacing: 0.5px !important;
+        font-weight: 500 !important;
+        text-transform: capitalize !important;
+        font-family: Figtree;
+      }
+
+      &.large_btn {
+        border-radius: 8px !important;
+
+        ::before {
+          border-radius: 8px !important;
+        }
+
+        .p-button-label {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
+
+// filter dialog
+.select_dialogue {
+  position: absolute !important;
+  top: 50px;
+  right: 5px;
+  z-index: 2;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
+  .select_dates_input.p-inputtext {
+    border: 1px solid !important;
+    padding: 4px !important;
+  }
+}
+
+.p-datatable {
+  .p-datatable-wrapper {
+    .p-datatable-table {
+      .p-datatable-thead {
+        height: 48px;
+
+        tr {
+          background-color: #4263eb1a !important;
+
+          // background-color: #f0f3f8 !important;
+          th {
+            border: 1px solid #e3e3e34d !important;
+            font-size: 12px !important;
+            background-color: transparent !important;
+            padding: 0 16px !important;
+
+            .p-column-header-content {
+              flex-grow: 1;
+              justify-content: space-between;
+
+              span>i {
+                color: #00000080;
+                font-size: 10px;
+              }
+
+              .p-column-title {
+                font-weight: 400 !important;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+
+      .p-datatable-tbody {
+        tr {
+          td {
+            border: 1px solid #e3e3e34d;
+            font-size: 12px !important;
+            font-family: Figtree;
+
+            // padding: auto 16px !important;
+            padding: {
+              left: 16px;
+              right: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .p-datatable-thead tr th .p-column-header-content,
+  .p-datatable-tbody tr td.p-selection-column {
+    .p-checkbox {
+      width: 1.25rem;
+      height: 1.25rem;
+
+      .p-checkbox-box {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin: 0 !important;
+        border-radius: 50% !important;
+        outline: 1.5px solid $subtext;
+      }
+
+      &.p-highlight {
+        .p-checkbox-box {
+          background-color: #4263eb !important;
+          outline: 1.5px solid #4263eb !important;
+        }
+      }
+    }
+  }
+
+  .p-selectable-row {
+    td {
+      font-size: 12px;
+      font-weight: 400;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.87);
+      padding: 0.75rem 1rem;
+      border: 0px !important;
+    }
+  }
+}
+
+//table paginator
+div.p-datatable-footer {
+  background-color: #4263eb1a !important;
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  font-family: Figtree;
+  // font-size: 11px;
+
+  .custom_paginator {
+    .p-paginator.p-component {
+      width: auto;
+      background-color: transparent !important;
+      // height: 45px;
+      padding: 8px;
+
+      .p-paginator-left-content {
+        font-size: 11px;
+        color: black;
+        
+      }
+
+      span.p-dropdown-label.p-inputtext,
+      .p-dropdown-trigger {
+        font-size: 11px;
+        color: black;
+      }
+    }
+  }
+}
+
+.p-paginator {
+  justify-content: end;
+
+  .p-dropdown {
+    width: auto !important;
+    height: 2rem;
+    background-color: inherit !important;
+
+    .p-inputtext,
+    .p-inputtext:read-only {
+      background-color: inherit !important;
+    }
+  }
+
+  .p-paginator-element {
+    height: 2rem;
+    width: 2rem;
+    min-width: 2rem;
+    font-size: 12px;
+    // text-align: center;
+    // vertical-align: middle;
+  }
+}
